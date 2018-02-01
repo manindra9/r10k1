@@ -43,7 +43,7 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class packinstall{
-  package { 'vim':
+  package { 'tree':
       ensure      => installed,
   }
 }
