@@ -42,13 +42,8 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class packinstall($val1 = hiera('val1'), $val2='false'){
-  package { $val1:
+class packinstall{
+  package { 'vim':
       ensure      => installed,
-  }
-  if ( $val2 ) {
-  reboot { 'after':
-    subscribe => Package[$val1],
-  }
   }
 }
