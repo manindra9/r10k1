@@ -44,6 +44,7 @@
 #
 class packinstall{
   package { 'vim':
-      ensure      => installed,
+      ensure      => latest,
+      
   }
 }
